@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google GeoCode API</title>
+	<link rel="stylesheet" href="googlemapapi.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="googlemapapi.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="intro">
+			<div class="left stack-image"></div>
+			<div class="explanation">
+				<h1>Get a latitude and longitude using the Google GeoCoding API</h1>
+                <p>This app lets you read from a MySQL database and geocode a table of addresses that are then displayed on a Google Map</p>
+			</div>
+		</div>
+		
+		<div class="stack">	
+            <h3>Enter the address you would like to GeoCode</h3>
+            <form id="addressInfo">
+                <input type="text" id="streetAddress"  placeholder="Street"><br/>
+                <input type="text" id="city"  placeholder="City" ><br/>
+                <input type="text" id="state"  placeholder="State" ><br/>
+                <input type="submit" id="getGPS" value="Get GPS!">
+                <input type="submit" id="clearForm" value="Clear the form">
+            </form>
+            <br/>
+            <div id="coordinates">
+                <h3>The coordinates are</h3>
+                <div>Latitude:<span id="latitude"></span><br/>
+                    Longitude: <span id="longitude"></span><br/>
+                </div>
+            </div>
+
+		</div>
+
+	</div>
+	<div class="templates hidden">
+
+		<div class="error">
+			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+		</div>
+	</div>
+</body>
+</html>
