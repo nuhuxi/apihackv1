@@ -22,9 +22,10 @@ $(document).ready(function() {
                 
                 console.log('Latitude is: ' + data.results[0].geometry.location.lat);
                 console.log('Longitude is is: ' + data.results[0].geometry.location.lng);
-            
-                $('#latitude').setAttribute('text',data.results[0].geometry.location.lat);
-                $('#logitude').setAttribute('text',data.results[0].geometry.location.lng);
+
+
+                $('#latitude').html(" "+data.results[0].geometry.location.lat);
+                $('#longitude').html(" "+data.results[0].geometry.location.lng);
 
             });
 
