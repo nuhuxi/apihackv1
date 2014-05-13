@@ -37,6 +37,9 @@ $(document).ready(function() {
         $("#streetAddress").val("");
         $("#city").val("");
         $("#state").val("");
+        $('#latitude').html("");
+        $('#longitude').html("");
+        
     });
     
 
